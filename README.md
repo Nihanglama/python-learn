@@ -1,2 +1,2 @@
 # python-learn
-hands on python
+Revising python.........................................XD
