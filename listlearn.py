@@ -126,3 +126,25 @@ Numbers = [1,2,3,5,88,99,55,33,41,52]
 # print(stdev(Numbers))
 
 
+from math import cos,sin
+
+def deveq(x):
+  eq=-(sin(x))-0.5
+  return eq
+
+
+def eqcal(x):
+  eq = cos(x)-0.5*x+2
+  return eq
+
+def finalShow(x):
+  i=1
+  xo=x
+  for i in range(1,11):
+    Xn= xo-(eqcal(xo)/deveq(xo))
+    print("Iteration {}\n X{}={}\tf(X{})={}\tf'(X{})={}".format(i ,i, round(Xn,4),i-1,round(eqcal(xo)),i-1,round(deveq(xo))))
+    xo=Xn
+    i+=1
+
+
+finalShow(x=-3)
