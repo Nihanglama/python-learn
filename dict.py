@@ -92,3 +92,4 @@ for value in milk_carton.values():
 
 
 print("The cost of six carton of mik is {}".format(milk_carton['Cost']*6))
+
